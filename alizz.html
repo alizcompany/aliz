@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ALIZZ</title>
+  <style>
+    /* Reiniciar estilos */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Verdana', sans-serif;
+      background-color: #fff9e3; /* Fondo amarillo suave */
+      color: #333;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      background-color: #ffbb00; /* Amarillo vibrante */
+      padding: 1rem 2rem;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    header h1 {
+      color: #4a3f23; /* Marrón oscuro */
+      font-size: 2rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    nav {
+      margin-top: 1rem;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #4a3f23; /* Marrón oscuro */
+      font-weight: bold;
+      padding: 0.5rem 1rem;
+      border: 2px solid transparent;
+      transition: all 0.3s;
+    }
+
+    nav ul li a:hover {
+      border-color: #ffeb8c; /* Amarillo claro */
+      background-color: #fff6d1; /* Fondo amarillo pastel */
+      border-radius: 5px;
+      transform: scale(1.1);
+    }
+
+    .hero {
+      background: linear-gradient(to bottom, #ffd24c, #fff9e3);
+      color: #4a3f23;
+      text-align: center;
+      padding: 4rem 1rem;
+      animation: slideIn 1.5s ease-in-out;
+    }
+
+    .hero h2 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      text-transform: uppercase;
+    }
+
+    .hero p {
+      font-size: 1.3rem;
+      margin-bottom: 2rem;
+    }
+
+    .cta-button {
+      background-color: #ffeb8c;
+      color: #4a3f23;
+      padding: 0.8rem 2rem;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 8px;
+      border: 2px solid #f9c846;
+      transition: background-color 0.3s, transform 0.3s;
+    }
+
+    .cta-button:hover {
+      background-color: #fff6d1;
+      transform: scale(1.1);
+    }
+
+    section {
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    section h2 {
+      color: #4a3f23;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    section p {
+      color: #5c4d2f;
+      font-size: 1.1rem;
+    }
+
+    .services {
+      background-color: #fff6d1;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      justify-content: center;
+      padding: 2rem;
+    }
+
+    .service-card {
+      background-color: #fff9e3;
+      padding: 1rem;
+      margin: 1rem auto;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      max-width: 300px;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    .service-card:hover {
+      transform: scale(1.05);
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .service-card h3 {
+      color: #4a3f23;
+      margin-bottom: 0.5rem;
+    }
+
+    footer {
+      background-color: #f9c846;
+      color: #4a3f23;
+      text-align: center;
+      padding: 2rem;
+    }
+
+    footer p {
+      font-size: 1rem;
+    }
+
+    footer .team {
+      margin-top: 1rem;
+    }
+
+    footer .team span {
+      display: inline-block;
+      margin: 0.3rem;
+      background: #fff6d1;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    /* Animaciones */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    @keyframes slideIn {
+      from {
+        transform: translateY(-100%);
+      }
+      to {
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <center><h1>ALIZZ</h1><img src="alizlogo.jpg"></center>
+    <nav>
+      <ul>
+        <li><a href="#about">Acerca de</a></li>
+        <li><a href="#services">Servicios</a></li>
+        <li><a href="#team">Equipo</a></li>
+      
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Bienvenido a ALIZZ</h2>
+    <p>Tu solución innovadora para cada desafío</p>
+    <a href="#services" class="cta-button">Explora nuestros servicios</a>
+  </section>
+
+  <section id="about">
+    <h2>Acerca de Nosotros</h2>
+    <p>En ALIZZ, trabajamos con pasión para crear soluciones únicas que transformen tus ideas en realidades concretas.</p>
+  </section>
+
+  <section id="services" class="services">
+    <div class="service-card">
+      <h3>Consultoría</h3>
+      <p>Asesoría profesional adaptada a tus necesidades.</p>
+      <a href="reservas.html" target="_blank">Ver más</a>
+    </div>
+    <div class="service-card">
+      <h3>Desarrollo Web</h3>
+      <p>Diseños modernos y funcionales para tu negocio.</p>
+      <a href="diseñoweb.html" target="_blank">Ver más</a>
+    </div>
+    <div class="service-card">
+      <h3>Soporte Técnico</h3>
+      <p>Soluciones rápidas y efectivas para cualquier problema técnico.</p>
+      <a href="soportetecnico.html" target="_blank">Ver más</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 ALIZZ. Todos los derechos reservados.</p>
+    <div class="team">
+      <h3>Equipo:</h3>
+      <span>Rodrigo Escalera</span>
+      <span>Einar Villca Heredia</span>
+      <span>Mosias Zenzano</span>
+    </div>
+  </footer>
+</body>
+</html>

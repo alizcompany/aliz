@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Consultas - ALIZZ</title>
+  <style>
+    /* Reiniciar estilos */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Verdana', sans-serif;
+      background-color: #fff9e3; /* Fondo amarillo suave */
+      color: #333;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      background-color: #f9c846; /* Amarillo vibrante */
+      padding: 1rem 2rem;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    header h1 {
+      color: #4a3f23; /* Marrón oscuro */
+      font-size: 2rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    .hero {
+      background: linear-gradient(to bottom, #ffd24c, #fff9e3);
+      color: #4a3f23;
+      text-align: center;
+      padding: 2rem 1rem;
+      animation: slideIn 1.5s ease-in-out;
+    }
+
+    .hero h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.3rem;
+      margin-bottom: 2rem;
+    }
+
+    .cta-button {
+      background-color: #ffeb8c;
+      color: #4a3f23;
+      padding: 0.8rem 2rem;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 8px;
+      border: 2px solid #f9c846;
+      transition: background-color 0.3s, transform 0.3s;
+    }
+
+    .cta-button:hover {
+      background-color: #fff6d1;
+      transform: scale(1.1);
+    }
+
+    section {
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    section h2 {
+      color: #4a3f23;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    form {
+      max-width: 600px;
+      margin: 0 auto;
+      background-color: #fff6d1;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    form .form-group {
+      margin-bottom: 1.5rem;
+      text-align: left;
+    }
+
+    form label {
+      display: block;
+      color: #4a3f23;
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+    }
+
+    form input,
+    form textarea,
+    form button {
+      width: 100%;
+      padding: 0.8rem;
+      border: 2px solid #f9c846;
+      border-radius: 5px;
+      font-size: 1rem;
+      font-family: 'Verdana', sans-serif;
+    }
+
+    form textarea {
+      height: 150px;
+      resize: none;
+    }
+
+    form button {
+      background-color: #ffeb8c;
+      color: #4a3f23;
+      font-weight: bold;
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+    }
+
+    form button:hover {
+      background-color: #fff6d1;
+      transform: scale(1.05);
+    }
+
+    footer {
+      background-color: #f9c846;
+      color: #4a3f23;
+      text-align: center;
+      padding: 2rem;
+    }
+
+    footer p {
+      font-size: 1rem;
+    }
+
+    /* Animaciones */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    @keyframes slideIn {
+      from {
+        transform: translateY(-100%);
+      }
+      to {
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Consultas ALIZZ</h1>
+  </header>
+
+  <section class="hero">
+    <h2>Envía tus Consultas</h2>
+    <p>Estamos aquí para ayudarte. Completa el formulario y nos pondremos en contacto contigo.</p>
+  </section>
+
+  <section>
+    <form action="procesar_consulta.php" method="POST">
+      <div class="form-group">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Correo Electrónico:</label>
+        <input type="email" id="email" name="email" placeholder="Ingresa tu correo electrónico" required>
+      </div>
+      <div class="form-group">
+        <label for="consulta">Consulta:</label>
+        <textarea id="consulta" name="consulta" placeholder="Escribe tu consulta aquí" required></textarea>
+      </div>
+      <div class="form-group">
+        <button type="submit">Enviar</button>
+      </div>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 ALIZZ. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>

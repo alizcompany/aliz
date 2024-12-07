@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detalles de Diseño Web</title>
+  <style>
+    /* Reiniciar estilos */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Verdana', sans-serif;
+      background-color: #fff9e3; /* Fondo amarillo suave */
+      color: #333;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      background-color: #f9c846; /* Amarillo vibrante */
+      padding: 1rem 2rem;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    header h1 {
+      color: #4a3f23; /* Marrón oscuro */
+      font-size: 2rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    .hero {
+      background: linear-gradient(to bottom, #ffd24c, #fff9e3);
+      color: #4a3f23;
+      text-align: center;
+      padding: 2rem 1rem;
+      animation: slideIn 1.5s ease-in-out;
+    }
+
+    .hero h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.3rem;
+      margin-bottom: 2rem;
+    }
+
+    section {
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    section h2 {
+      color: #4a3f23;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    section p {
+      color: #5c4d2f;
+      font-size: 1.1rem;
+      line-height: 1.5;
+    }
+
+    .steps {
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: left;
+      background-color: #fff6d1;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    .steps h3 {
+      color: #4a3f23;
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .steps ol {
+      padding-left: 1.5rem;
+    }
+
+    .steps ol li {
+      margin-bottom: 1rem;
+      color: #4a3f23;
+    }
+
+    .cta-button {
+      background-color: #ffeb8c;
+      color: #4a3f23;
+      padding: 0.8rem 2rem;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 8px;
+      border: 2px solid #f9c846;
+      transition: background-color 0.3s, transform 0.3s;
+      display: inline-block;
+      margin-top: 2rem;
+    }
+
+    .cta-button:hover {
+      background-color: #fff6d1;
+      transform: scale(1.1);
+    }
+
+    footer {
+      background-color: #f9c846;
+      color: #4a3f23;
+      text-align: center;
+      padding: 2rem;
+    }
+
+    footer p {
+      font-size: 1rem;
+    }
+
+    /* Animaciones */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    @keyframes slideIn {
+      from {
+        transform: translateY(-100%);
+      }
+      to {
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Detalles de Diseño Web</h1>
+  </header>
+
+  <section class="hero">
+    <h2>Diseño Web Profesional</h2>
+    <p>Transformamos tus ideas en experiencias digitales únicas.</p>
+  </section>
+
+  <section>
+    <div class="steps">
+      <h3>Procedimientos para nuestro servicio de diseño web:</h3>
+      <ol>
+        <li><strong>Reunión inicial:</strong> Conversamos contigo para entender tus necesidades y objetivos.</li>
+        <li><strong>Planificación:</strong> Creamos un plan detallado que incluye estructura, diseño y funcionalidades.</li>
+        <li><strong>Diseño del prototipo:</strong> Te presentamos un prototipo visual para aprobación.</li>
+        <li><strong>Desarrollo:</strong> Construimos tu sitio web utilizando las tecnologías más avanzadas.</li>
+        <li><strong>Pruebas:</strong> Probamos cada funcionalidad para garantizar un rendimiento óptimo.</li>
+        <li><strong>Lanzamiento:</strong> Tu página web estará lista para deslumbrar al mundo.</li>
+        <li><strong>Soporte continuo:</strong> Ofrecemos mantenimiento y actualizaciones según lo necesites.</li>
+      </ol>
+      <a href="index.html" class="cta-button">Volver al Inicio</a><a href="alizz.html">Ver más</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 ALIZZ. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>
